@@ -1,3 +1,6 @@
+// Instead of spinner, created a small animation to make a more user friendly experience
+// Adjusted the code on the reflection activity so that it doesn't duplicate questions
+
 using System;
 
 class Program

@@ -42,8 +42,8 @@ public class ReflectionActivity : Activity
         while (elapsed < _duration && i < shuffledQuestions.Count)
         {
             Console.WriteLine(shuffledQuestions[i]);
-            ShowSpinner(6);
-            elapsed += 6;
+            ShowSpinner(7);
+            elapsed += 7;
             i++;
         }
 
