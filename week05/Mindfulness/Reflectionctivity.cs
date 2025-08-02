@@ -27,17 +27,24 @@ public class ReflectionActivity : Activity
     {
         Start();
         Console.Clear();
+
         Random rand = new Random();
+
         Console.WriteLine("\nPrompt:");
         Console.WriteLine(_prompts[rand.Next(_prompts.Count)]);
         Console.WriteLine();
 
+        var shuffledQuestions = _questions.OrderBy(q => rand.Next()).ToList();
+
         int elapsed = 0;
-        while (elapsed < _duration)
+        int i = 0;
+
+        while (elapsed < _duration && i < shuffledQuestions.Count)
         {
-            Console.WriteLine(_questions[rand.Next(_questions.Count)]);
+            Console.WriteLine(shuffledQuestions[i]);
             ShowSpinner(6);
             elapsed += 6;
+            i++;
         }
 
         End();
