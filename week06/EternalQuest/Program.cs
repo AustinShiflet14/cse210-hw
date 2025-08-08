@@ -1,9 +1,13 @@
+// Leveling System - The user levels up every 1000 points.
+// Streak Tracker - Tracks how many days in a row goals are completed.
+// Badge Unlock - Unlocks a special message when the user hits 5000 points.
 using System;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the EternalQuest Project.");
+        GoalManager manager = new GoalManager();
+        manager.Start();
     }
 }
