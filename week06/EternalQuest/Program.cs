@@ -1,6 +1,6 @@
-// Leveling System - The user levels up every 1000 points.
-// Streak Tracker - Tracks how many days in a row goals are completed.
-// Badge Unlock - Unlocks a special message when the user hits 5000 points.
+// Creativity:
+// Leveling Up - The user levels up every 1000 points.
+// Streaks - Tracks how many days in a row goals are completed.
 using System;
 
 class Program
